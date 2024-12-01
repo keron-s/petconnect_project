@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Bookings - PetConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Bookings</h1>
+    </header>
+    <main>
+        <section class="booking-history">
+            <form id="view-bookings-form">
+                <label for="email">Enter your email to view bookings:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">View Bookings</button>
+            </form>
+            <div id="bookings-container">
+                <!-- User bookings will be loaded here -->
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

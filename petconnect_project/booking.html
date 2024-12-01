@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - PetConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Book a Service</h1>
+    </header>
+    <main>
+        <section class="booking-form">
+            <form action="process_booking.php" method="POST">
+                <label for="service-id">Select Service:</label>
+                <select name="service_id" id="service-id" required>
+                    <option value="1">Pawfect Groomers</option>
+                    <option value="2">Healthy Paws Vet</option>
+                    <option value="3">Canine Trainers Co.</option>
+                    <option value="4">Paws & Relax Cafe</option>
+                </select>
+
+                <label for="user-name">Your Name:</label>
+                <input type="text" name="user_name" id="user-name" required>
+
+                <label for="user-email">Your Email:</label>
+                <input type="email" name="user_email" id="user-email" required>
+
+                <label for="booking-date">Booking Date:</label>
+                <input type="date" name="booking_date" id="booking-date" required>
+
+                <label for="booking-time">Booking Time:</label>
+                <input type="time" name="booking_time" id="booking-time" required>
+
+                <label for="notes">Additional Notes:</label>
+                <textarea name="notes" id="notes" rows="4"></textarea>
+
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
